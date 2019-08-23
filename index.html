@@ -4,32 +4,53 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pokedex App</title>
+    <!--Bootstrap Link-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-  <header><h1 class="page-title">Pokedex List</h1> </header>
+    <header class="container-fluid sticky-top"><h1 class="page-title ">Pokedex List</h1> </header>
     <section class="poke-section">
-
-      <ul class="pokemon-list">
-
-      </ul>
+      <ul class="list-group"></ul>
     </section>
-	  <div id="modal-container"></div>
-  <footer class="page-footer"><p>Find Me On</p><!--Scoial Media Icons-->
-    <div class="social-media">
+      <!--Bootstrap Model Section Start -->
+    <div class="modal fade" id="PokeModal" tabindex="-1" role="dialog" aria-labelledby="pokeName" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pokeName"></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img id="pokeImg"></img>
+            <p id="pokeHeight"></p>
+            <p id="pokeWeight"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Bootstrap Model Section End -->
+    <footer class="container page-footer"><p>Find Me On</p><!--Scoial Media Icons-->
+      <div class="social-media">
         <a href="#" target="_blank"><img src="img/githubsvg.svg"  alt="Git Hub Logo"></a>
         <a href="#" target="_blank"><img src="img/twittersvg.svg"  alt="Twitter Logo"></a>
         <a href="#" target="_blank"><img src="img/linkedInsvg.svg" alt="LinkedIn Logo"></a>
-    </div>
-      <br>
-    <script type="text/javascript">
+      </div>
+        <br>
+      <script type="text/javascript">
         document.write("Last Updated: " +document.lastModified);/*Display Date & Time Of Last Update of Site */
-
-    </script>
-
-  </footer>
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js"  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="  crossorigin="anonymous"></script> <!--Jquery CDN Link-->
+      </script>
+    </footer>
+     <script src="https://code.jquery.com/jquery-3.4.1.js"  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="  crossorigin="anonymous"></script> <!--Jquery CDN Link-->
+     <!--JS Pooper & Bootstrap Links-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script  src="js/scripts.js"> </script><!--javascript src link-->
 
   </body>
