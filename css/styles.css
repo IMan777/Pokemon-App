@@ -33,20 +33,22 @@ body{
     margin-bottom: 10%;
  }
  .page-title{
-     font-family:"Pokemon Solid";
+     font-family:"Pokemon Solid",serif;
      text-align: center;
      color:navy;
-}
+     background-color: inherit;
+   }
 .page-footer{
     clear: both;
     display: flex;
     flex-direction: column; /* Footer Flex Box & Center Aligned For Items */
     text-align: center;
     margin-top:15%;
-    margin-bottom:1px;
+    margin-bottom:1%;
     margin-left: auto;
     margin-right: auto;
     background-color:gold;
+    color:navy;
     padding-top: 2%;
     padding-bottom:2%;
     border-radius:5px 5px 0 0;
@@ -61,32 +63,27 @@ body{
 
     }
 }
-@media all and (min-width:500px)and(max-width:750px){
-    .btn{
-        font-size: 14px;
-
-    }
-}
-@media all and(min-width:750px) and (max-width:1800px){
-    .btn{
-        font-size:28px;
-    }
-}
 /*Pokedex Array Style Attributes End */
 /*Model Style Attributes Start*/
 #pokeName{
     margin-top: 10px;
     color:firebrick;
+    background-color:gold;
     font-weight:bold;
     font-size:38px;
     text-transform:capitalize;
     font-variant:small-caps;
+    border: 2px solid firebrick;
+    border-radius: 5px;
+    box-shadow: 2px 2px grey;
+    padding: 5px;
 
 }
 #pokeHeight , #pokeWeight{
      font-size: 18px;
      text-align: center;
      color:darkred;
+     background-color: inherit;
      margin-bottom:5%;
 }
 
@@ -101,7 +98,9 @@ body{
 header{
     padding: 2px;
     background-color:gold;
+    color:inherit;
     margin: auto;
     border-radius: 5px;
     box-shadow:2px 2px grey;
+	
  }
