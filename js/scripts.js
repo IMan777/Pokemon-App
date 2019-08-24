@@ -10,7 +10,7 @@ var repository = [ ];
         var btn = $('<button class="btn btn-dark" data-toggle="modal" data-target="#PokeModal"></button>');
         $(btn).text(pokemon.name);
         $(listitem).append(btn);
-         btn.on('click', function(event) { /*JQuery Click Button Event Listener Used To Display showDetails Function Properties */
+         btn.on('click', function() { /*JQuery Click Button Event Listener Used To Display showDetails Function Properties */
         showDetails(pokemon);
     });
   }
